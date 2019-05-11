@@ -1,0 +1,47 @@
+// FONTS
+@font-face {
+    font-family: 'Roboto-BoldCondensed';
+    src: url("../fonts/Roboto/Roboto-BoldCondensed.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto-Condensed';
+    src: url("../fonts/Roboto/Roboto-Condensed.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url("../fonts/Roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url("../fonts/Roboto/Roboto-Thin.ttf");
+}
+
+// VARIABLES
+$font-title: 'Roboto-Thin',
+Helvetica,
+sans-serif;
+
+// COLORS
+$Primary-color: #222;
+
+// MIXINS
+@mixin borderRadius($property) {
+    -webkit-border-radius: $property;
+    -moz-border-radius: $property;
+    border-radius: $property;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto-Light', Helvetica, sans-serif;
+    color: $Primary-color;
+}
+
+.inner-container {
+    margin: 0 15px;
+}

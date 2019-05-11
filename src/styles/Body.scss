@@ -1,0 +1,29 @@
+@import 'App';
+
+#Body {
+    .inner-container {
+        .apps-list {
+            list-style: none;
+
+            .app-item {
+                .container-item {
+                    width: 100%;
+                    height: 50px;
+                    background-color: darkmagenta;
+                    @include borderRadius(10px);
+                    position: relative;
+                    cursor: pointer;
+
+                    .title {
+                        color: #fff;
+                        position: absolute;
+                        right: 40px;
+                        cursor: pointer;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+    }
+}
